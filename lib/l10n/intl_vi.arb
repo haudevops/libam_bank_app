@@ -1,0 +1,11 @@
+{
+  "libam_bank": "Libam Bank",
+  "user_name": "Tài khoản",
+  "password": "Mật khẩu",
+  "login_with_guest": "Đăng nhập với khách",
+  "login": "Đăng nhập",
+  "logout": "Đăng xuất",
+  "empty_user_name": "Tài khoản trống",
+  "empty_password": "Mật khẩu trống",
+  "register": "Đăng ký"
+}
