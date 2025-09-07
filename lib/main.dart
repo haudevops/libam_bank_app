@@ -3,6 +3,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:libam_bank_app/cores/loading/app_loading.dart';
 import 'package:libam_bank_app/generated/l10n.dart';
 import 'package:libam_bank_app/routes/route_settings.dart';
+import 'package:toastification/toastification.dart';
 import 'pages/app_bloc/app_bloc.dart';
 import 'pages/pages.dart';
 
@@ -38,23 +39,25 @@ class _MyAppState extends State<MyApp> {
     ResponsiveCore.init(context);
 
     return AppBlocs.providers(
-      child: MaterialApp(
-        navigatorKey: navigatorKey,
-        debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      child: ToastificationWrapper(
+        child: MaterialApp(
+          navigatorKey: navigatorKey,
+          debugShowCheckedModeBanner: false,
+          title: 'Flutter Demo',
+          theme: ThemeData(
+            colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          ),
+          supportedLocales: S.delegate.supportedLocales,
+          localizationsDelegates: const [
+            S.delegate,
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+          ],
+          locale: const Locale('vi'),
+          onGenerateRoute: CustomRouter.allRoutes,
+          home: LoginView(),
         ),
-        supportedLocales: S.delegate.supportedLocales,
-        localizationsDelegates: const [
-          S.delegate,
-          GlobalMaterialLocalizations.delegate,
-          GlobalWidgetsLocalizations.delegate,
-          GlobalCupertinoLocalizations.delegate,
-        ],
-        locale: const Locale('vi'),
-        onGenerateRoute: CustomRouter.allRoutes,
-        home: LoginView(),
       ),
     );
   }

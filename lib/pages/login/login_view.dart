@@ -54,10 +54,12 @@ class _LoginViewState extends State<LoginView> {
 
     if (state is LoginValidateState) {
       await SharedPrefs().setString(Constants.TOKEN, state.token);
+      
+      ToastCore.show(message: S.current.login_success, primaryColor: Colors.green);
 
       Navigator.pushNamedAndRemoveUntil(
         context,
-        HomeView.routeName,
+        NavigationView.routeName,
         (_) => false,
       );
     }
