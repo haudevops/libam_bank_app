@@ -9,5 +9,18 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
     on<LoginEvent>((event, emit) {
       // TODO: implement event handler
     });
+
+    on<LoginValidateEvent>(loginSink);
+  }
+
+  Future<void> loginSink(LoginValidateEvent event, Emitter<LoginState> emit) async {
+    emit(LoginLoadingState(isLoading: true));
+    try {
+      await Future.delayed(Duration(seconds: 2));
+      emit(LoginValidateState(token: "Ok!"));
+    } catch (e) {
+      emit(LoginErrorState(error: e.toString()));
+    }
+    emit(LoginLoadingState(isLoading: false));
   }
 }

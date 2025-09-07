@@ -3,15 +3,15 @@ import 'package:toastification/toastification.dart';
 
 class ToastCore {
   static final ToastCore _instance = ToastCore._internal();
-  static final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
+  static late GlobalKey<NavigatorState> navigatorKey;
 
   factory ToastCore() => _instance;
 
   ToastCore._internal();
 
-  /// Khởi tạo 1 lần trong main.dart
-  static void init() {
-    // không cần gì thêm, chỉ giữ sẵn navigatorKey
+  /// Khởi tạo trong main.dart
+  static void init(GlobalKey<NavigatorState> key) {
+    navigatorKey = key;
   }
 
   /// Show toast mà không cần context
