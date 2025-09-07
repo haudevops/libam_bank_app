@@ -18,9 +18,12 @@ class ToastCore {
   static void show({
     required String message,
     ToastificationType type = ToastificationType.info,
-    Duration duration = const Duration(seconds: 3),
+    Duration duration = const Duration(seconds: 2),
     ToastificationStyle style = ToastificationStyle.fillColored,
     Alignment alignment = Alignment.topCenter,
+    Color? backgroundColor,
+    Color? foregroundColor,
+    Color? primaryColor,
   }) {
     final context = navigatorKey.currentContext;
     if (context == null) return;
@@ -32,6 +35,10 @@ class ToastCore {
       autoCloseDuration: duration,
       alignment: alignment,
       title: Text(message),
+      backgroundColor: backgroundColor,
+      foregroundColor: foregroundColor,
+      primaryColor: primaryColor,
     );
   }
+
 }

@@ -12,6 +12,9 @@ class AppBlocs {
         BlocProvider<HomeBloc>(
           create: (_) => HomeBloc(),
         ),
+        BlocProvider<NavigationBloc>(
+          create: (_) => NavigationBloc(),
+        ),
       ],
       child: child,
     );

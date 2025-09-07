@@ -139,6 +139,76 @@ class S {
       args: [],
     );
   }
+
+  /// `Login Success`
+  String get login_success {
+    return Intl.message(
+      'Login Success',
+      name: 'login_success',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Logout Success`
+  String get logout_success {
+    return Intl.message(
+      'Logout Success',
+      name: 'logout_success',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Register Success`
+  String get register_success {
+    return Intl.message(
+      'Register Success',
+      name: 'register_success',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Home`
+  String get home {
+    return Intl.message(
+      'Home',
+      name: 'home',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `History`
+  String get history {
+    return Intl.message(
+      'History',
+      name: 'history',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Gift`
+  String get gift {
+    return Intl.message(
+      'Gift',
+      name: 'gift',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Account`
+  String get account {
+    return Intl.message(
+      'Account',
+      name: 'account',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

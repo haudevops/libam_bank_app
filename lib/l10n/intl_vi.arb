@@ -7,5 +7,12 @@
   "logout": "Đăng xuất",
   "empty_user_name": "Tài khoản trống",
   "empty_password": "Mật khẩu trống",
-  "register": "Đăng ký"
+  "register": "Đăng ký",
+  "login_sucess": "Đăng nhập thành công",
+  "logout_sucess": "Đăng xuất thành công",
+  "register_sucess": "Đăng ký thành công",
+  "home": "Trang chủ",
+  "history": "Lịch sử",
+  "gift": "Quà tặng",
+  "account": "Tài khoản"
 }

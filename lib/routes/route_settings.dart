@@ -16,6 +16,8 @@ class CustomRouter {
         return SlideLeftRoute(const LoginView());
       case HomeView.routeName:
         return SlideLeftRoute(const HomeView());
+      case NavigationView.routeName:
+        return SlideLeftRoute(const NavigationView());
       default:
         throw ('this route name does not exist');
     }

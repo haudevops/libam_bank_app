@@ -7,5 +7,12 @@
   "logout": "Logout",
   "empty_user_name": "Empty UserName",
   "empty_password": "Empty Password",
-  "register": "Register"
+  "register": "Register",
+  "login_success": "Login Success",
+  "logout_success": "Logout Success",
+  "register_success": "Register Success",
+  "home": "Home",
+  "history": "History",
+  "gift": "Gift",
+  "account": "Account"
 }
