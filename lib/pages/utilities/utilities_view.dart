@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:libam_bank_app/cores/cores.dart';
 
-class HomeView extends StatefulWidget {
-  const HomeView({super.key});
+class UtilitiesView extends StatefulWidget {
+  const UtilitiesView({super.key});
 
-  static const routeName = '/HomeView';
+  static const routeName = "/UtilitiesView";
 
   @override
-  State<HomeView> createState() => _HomeViewState();
+  State<UtilitiesView> createState() => _UtilitiesViewState();
 }
 
-class _HomeViewState extends State<HomeView> {
-
+class _UtilitiesViewState extends State<UtilitiesView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

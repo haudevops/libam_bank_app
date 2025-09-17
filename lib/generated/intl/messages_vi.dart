@@ -37,6 +37,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "logout": MessageLookupByLibrary.simpleMessage("Đăng xuất"),
         "password": MessageLookupByLibrary.simpleMessage("Mật khẩu"),
         "register": MessageLookupByLibrary.simpleMessage("Đăng ký"),
-        "user_name": MessageLookupByLibrary.simpleMessage("Tài khoản")
+        "user_name": MessageLookupByLibrary.simpleMessage("Tài khoản"),
+        "utilities": MessageLookupByLibrary.simpleMessage("Tiện ích")
       };
 }
