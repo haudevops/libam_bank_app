@@ -42,6 +42,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "register": MessageLookupByLibrary.simpleMessage("Register"),
         "register_success":
             MessageLookupByLibrary.simpleMessage("Register Success"),
-        "user_name": MessageLookupByLibrary.simpleMessage("UserName")
+        "user_name": MessageLookupByLibrary.simpleMessage("UserName"),
+        "utilities": MessageLookupByLibrary.simpleMessage("Utilities")
       };
 }

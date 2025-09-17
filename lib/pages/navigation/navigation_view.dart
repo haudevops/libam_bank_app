@@ -123,9 +123,9 @@ class _NavigationViewState extends State<NavigationView> {
       case 0:
         return const HomeView();
       case 1:
-        return const HomeView();
+        return const HistoryView();
       case 2:
-        return const HomeView();
+        return const UtilitiesView();
       case 3:
         return const HomeView();
       default:

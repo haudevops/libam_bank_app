@@ -15,6 +15,12 @@ class AppBlocs {
         BlocProvider<NavigationBloc>(
           create: (_) => NavigationBloc(),
         ),
+        BlocProvider<HistoryBloc>(
+          create: (_) => HistoryBloc(),
+        ),
+        BlocProvider<UtilitiesBloc>(
+          create: (_) => UtilitiesBloc(),
+        ),
       ],
       child: child,
     );
