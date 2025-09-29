@@ -28,6 +28,7 @@ class _NavigationViewState extends State<NavigationView> {
       selectedIndex = index;
       // bloc.add(NavigationOnTap(index: index));
     });
+    print('index: $index');
   }
 
   @override
@@ -40,7 +41,7 @@ class _NavigationViewState extends State<NavigationView> {
         child: BlocConsumer<NavigationBloc, NavigationState>(
           listener: (context, state) {},
           builder: (context, state) {
-            return const HomeView();
+            return initPage(indexPage: selectedIndex);
           }
         ),
       ),
@@ -127,7 +128,7 @@ class _NavigationViewState extends State<NavigationView> {
       case 2:
         return const UtilitiesView();
       case 3:
-        return const HomeView();
+        return const SettingView();
       default:
         return const HomeView();
     }

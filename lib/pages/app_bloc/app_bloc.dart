@@ -6,21 +6,12 @@ class AppBlocs {
   static MultiBlocProvider providers({required Widget child}) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider<LoginBloc>(
-          create: (_) => LoginBloc(),
-        ),
-        BlocProvider<HomeBloc>(
-          create: (_) => HomeBloc(),
-        ),
-        BlocProvider<NavigationBloc>(
-          create: (_) => NavigationBloc(),
-        ),
-        BlocProvider<HistoryBloc>(
-          create: (_) => HistoryBloc(),
-        ),
-        BlocProvider<UtilitiesBloc>(
-          create: (_) => UtilitiesBloc(),
-        ),
+        BlocProvider<LoginBloc>(create: (_) => LoginBloc()),
+        BlocProvider<HomeBloc>(create: (_) => HomeBloc()),
+        BlocProvider<NavigationBloc>(create: (_) => NavigationBloc()),
+        BlocProvider<HistoryBloc>(create: (_) => HistoryBloc()),
+        BlocProvider<UtilitiesBloc>(create: (_) => UtilitiesBloc()),
+        BlocProvider<SettingBloc>(create: (_) => SettingBloc()),
       ],
       child: child,
     );

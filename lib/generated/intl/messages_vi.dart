@@ -30,6 +30,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "gift": MessageLookupByLibrary.simpleMessage("Quà tặng"),
         "history": MessageLookupByLibrary.simpleMessage("Lịch sử"),
         "home": MessageLookupByLibrary.simpleMessage("Trang chủ"),
+        "info_account":
+            MessageLookupByLibrary.simpleMessage("Thông tin tài khoản"),
         "libam_bank": MessageLookupByLibrary.simpleMessage("Libam Bank"),
         "login": MessageLookupByLibrary.simpleMessage("Đăng nhập"),
         "login_with_guest":

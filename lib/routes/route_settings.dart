@@ -20,6 +20,8 @@ class CustomRouter {
         return SlideLeftRoute(const NavigationView());
       case HistoryView.routeName:
         return SlideLeftRoute(const HistoryView());
+      case SettingView.routeName:
+        return SlideLeftRoute(const SettingView());
       default:
         throw ('this route name does not exist');
     }
