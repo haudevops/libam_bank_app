@@ -30,6 +30,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "gift": MessageLookupByLibrary.simpleMessage("Gift"),
         "history": MessageLookupByLibrary.simpleMessage("History"),
         "home": MessageLookupByLibrary.simpleMessage("Home"),
+        "info_account": MessageLookupByLibrary.simpleMessage("Info account"),
         "libam_bank": MessageLookupByLibrary.simpleMessage("Libam Bank"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "login_success": MessageLookupByLibrary.simpleMessage("Login Success"),

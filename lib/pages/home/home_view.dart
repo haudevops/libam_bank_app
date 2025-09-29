@@ -11,7 +11,6 @@ class HomeView extends StatefulWidget {
 }
 
 class _HomeViewState extends State<HomeView> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,6 +18,24 @@ class _HomeViewState extends State<HomeView> {
       body: Container(
         width: ResponsiveCore.screenWidth,
         height: ResponsiveCore.screenHeight,
+        child: CustomScrollView(
+          slivers: [
+            const SliverAppBar(
+              pinned: true,
+              expandedHeight: 200,
+              flexibleSpace: FlexibleSpaceBar(
+                title: Text("Custom Sliver Demo"),
+                background: FlutterLogo(),
+              ),
+            ),
+            SliverList(
+              delegate: SliverChildBuilderDelegate(
+                (context, index) => ListTile(title: Text("Item $index")),
+                childCount: 30,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

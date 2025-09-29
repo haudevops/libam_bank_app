@@ -12,3 +12,6 @@ export 'history/history_view.dart';
 
 export 'utilities/utilities_bloc.dart';
 export 'utilities/utilities_view.dart';
+
+export 'setting/setting_bloc.dart';
+export 'setting/setting_view.dart';
